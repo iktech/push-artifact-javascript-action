@@ -1,0 +1,28 @@
+name: 'Push Artifact'
+description: 'Action pushes artifact details through the flow of the artifactz.io service'
+inputs:
+  serviceUrl:
+    description: 'URL of the artifactz service'
+    required: true
+    default: 'https://artifactor.artifactz.io'
+  apiToken:
+    description: API Token to use
+    required: true
+  stage:
+    description: 'Stage from where the artifact is getting pushed'
+    required: true
+  name:
+    description: 'Name of the artifact to push'
+    required: true
+  version:
+    description: 'The artifact version to push'
+    required: false
+outputs:
+  version:
+    description: 'The version of the artifact that was pushed as a result of this action'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'octagon'
+  color: blue
