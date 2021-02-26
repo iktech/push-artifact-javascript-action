@@ -32,7 +32,7 @@ try {
         }
     }
 
-    console.log(`Publishing artifact '${name}' from the stage '${stage}'`);
+    console.log(`Pushing artifact '${name}' from the stage '${stage}'`);
     if (version) {
         console.log(`Pushing version ${version}`);
     }
