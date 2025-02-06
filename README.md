@@ -6,7 +6,7 @@ If version is omitted, then current version from the specified stage is getting 
 ## Inputs
 ### `serviceUrl`
 **Required** The URL of the artifactz.io service. 
-*Default:* https://artifactor.artifactz.io
+*Default:* https://api.artifactz.io
 
 ### `apiToken`
 **Required** The API token with write permissions 

@@ -40,7 +40,7 @@ try {
     axios.put(`${serviceUrl}/artifacts/push`, payload, {
         headers: {
             'Content-Type': 'application/json',
-            'User-Agent': 'Push Artifact Github Action v1.0.0',
+            'User-Agent': 'Push Artifact Github Action v1.1.0',
             'Authorization': `Bearer ${apiToken}`,
         }
     }).then(response => {
